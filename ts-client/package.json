@@ -1,7 +1,34 @@
 {
-  "name": "ts-client",
-  "module": "index.ts",
+  "name": "arc-agi-3-client",
+  "version": "1.0.0",
+  "description": "TypeScript client library for the ARC-AGI-3 API",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --format esm --target bun",
+    "test": "bun test",
+    "dev": "bun run src/index.ts"
+  },
+  "keywords": [
+    "arc-agi-3",
+    "api",
+    "client",
+    "typescript",
+    "bun"
+  ],
+  "author": "ARC Prize Foundation",
+  "license": "MIT",
   "devDependencies": {
     "@types/bun": "latest"
   },
