@@ -27,7 +27,6 @@
     "typescript",
     "bun"
   ],
-  "author": "ARC Prize Foundation",
   "license": "MIT",
   "devDependencies": {
     "@types/bun": "latest"
